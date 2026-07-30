@@ -2,7 +2,7 @@
 
 Type: grilling
 Status: open
-Blocked by: 01
+Blocked by: 06
 
 ## Question
 
@@ -13,4 +13,4 @@ Needs to cover:
 - Database for storing accounts, transcripts, generated posts, and history (must have a workable free tier)
 - Where/how LinkedIn OAuth tokens (and refresh tokens) get stored and refreshed
 
-Blocked on the LinkedIn API/OAuth research ticket: the token storage and refresh requirements depend on what that scope/flow actually looks like.
+Blocked on verifying the LinkedIn Developer Portal access path (ticket 06): if `w_member_social` requires Community Management review and a registered legal organization, that may force a rethink of the destination's direct-publish feature before the stack itself can be chosen.

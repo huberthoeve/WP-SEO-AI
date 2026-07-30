@@ -15,6 +15,7 @@ A complete spec for a new, standalone app — "Transcript → LinkedIn" — wher
 
 ## Decisions so far
 
+- [LinkedIn API/OAuth requirements](issues/01-linkedin-api-oauth-requirements.md) — Technically feasible, no hard blockers (no fee, no follower/partner gate), but LinkedIn's docs are inconsistent on whether the posting scope is self-serve or requires org-level review — needs a live portal test (see new task ticket).
 - [LLM provider: Claude](issues/02-llm-provider-choice.md) — Claude API generates the post variations.
 - [Auth mechanism: LinkedIn OAuth only](issues/03-auth-mechanism.md) — "Sign in with LinkedIn" is the sole login method; the same connection doubles as the publishing permission.
 - [Transcript input format](issues/04-transcript-input-format.md) — Plain text paste/upload only for v1; no hard length limit specified yet.
