@@ -17,6 +17,7 @@ A complete spec for a new, standalone app — "Transcript → LinkedIn" — wher
 
 - [LinkedIn API/OAuth requirements](issues/01-linkedin-api-oauth-requirements.md) — Technically feasible, no hard blockers (no fee, no follower/partner gate), but LinkedIn's docs are inconsistent on whether the posting scope is self-serve or requires org-level review — needed a live portal test.
 - [Verify LinkedIn Developer Portal access path](issues/06-verify-linkedin-portal-access-path.md) — Confirmed self-serve, instant, no review. Credentials obtained. Direct-publish destination confirmed buildable; unblocks tech stack.
+- [Tech stack selection](issues/05-tech-stack-selection.md) — Next.js + Auth.js (LinkedIn OIDC provider) + Notion as the datastore via a custom Auth.js adapter (chosen deliberately despite rate-limit/secrets-storage trade-offs).
 - [LLM provider: Claude](issues/02-llm-provider-choice.md) — Claude API generates the post variations.
 - [Auth mechanism: LinkedIn OAuth only](issues/03-auth-mechanism.md) — "Sign in with LinkedIn" is the sole login method; the same connection doubles as the publishing permission.
 - [Transcript input format](issues/04-transcript-input-format.md) — Plain text paste/upload only for v1; no hard length limit specified yet.
