@@ -1,7 +1,7 @@
 # Verify LinkedIn Developer Portal access path for w_member_social
 
 Type: task
-Status: open
+Status: resolved
 
 ## Question
 
@@ -14,3 +14,7 @@ This is a hands-on verification task, not something answerable by more reading:
 3. Observe and record: does adding "Share on LinkedIn" grant `w_member_social` instantly, or does it trigger an application/review flow? If a review is triggered, record what it asks for (organization details, business legitimacy, etc.).
 
 This is a HITL task — it requires a real LinkedIn account and company Page, which the agent cannot create or act through on your behalf. Record the outcome as the answer here when done; it determines whether the destination's "direct publish" feature is buildable as scoped, or needs to fall back to a copy/paste flow for v1.
+
+## Answer
+
+Verified directly in the LinkedIn Developer Portal: adding "Share on LinkedIn" alongside "Sign In with LinkedIn using OpenID Connect" granted `w_member_social` **instantly, self-serve, no review** — resolving the ambiguity from the research ticket in favor of the self-serve path. LinkedIn API credentials are now in hand. The destination's direct-publish feature is confirmed buildable as scoped; no fallback to copy/paste needed. This unblocks the tech-stack ticket.
