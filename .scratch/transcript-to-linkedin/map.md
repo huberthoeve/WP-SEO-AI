@@ -22,13 +22,12 @@ A complete spec for a new, standalone app — "Transcript → LinkedIn" — wher
 - [LLM provider: Claude](issues/02-llm-provider-choice.md) — Claude API generates the post variations.
 - [Auth mechanism: LinkedIn OAuth only](issues/03-auth-mechanism.md) — "Sign in with LinkedIn" is the sole login method; the same connection doubles as the publishing permission.
 - [Transcript input format](issues/04-transcript-input-format.md) — Plain text paste/upload only for v1; no hard length limit specified yet.
+- [UI/UX flow](issues/08-ui-ux-flow.md) — Blank-slate landing with transcript input; Tinder-style swiping to approve/reject angles; auto-generate posts from approved angles; edit with LinkedIn preview; history shows drafted posts.
+- [Cost and rate-limiting](issues/09-cost-rate-limiting.md) — No per-user limits; users bear their own API costs.
+- [Error handling](issues/10-error-handling.md) — Show errors and allow retry at each stage (extraction, generation, publish); auto-save drafts if LinkedIn publish retry fails.
+- [Data retention and privacy](issues/11-data-retention-privacy.md) — Transcripts stored indefinitely; users can manually delete; no auto-expiration.
 
 ## Not yet specified
-
-- UI/UX flow: pages, editing experience for a generated draft, design of the history view.
-- Cost/rate-limiting for Claude API usage per user.
-- Error handling for failed generations or failed LinkedIn publishes.
-- Data retention/privacy handling for transcript content (meeting transcripts may contain sensitive business information).
 
 ## Out of scope
 
