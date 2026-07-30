@@ -1,7 +1,7 @@
 # Map Garret's System Rules by Timeframe
 
 Type: grilling
-Status: unclaimed
+Status: claimed
 Blocked by: (none)
 
 ## Question

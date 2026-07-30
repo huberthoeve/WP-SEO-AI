@@ -1,7 +1,7 @@
 # Define Position Sizing and Risk Per Trade
 
 Type: grilling
-Status: unclaimed
+Status: claimed
 Blocked by: (none)
 
 ## Question
